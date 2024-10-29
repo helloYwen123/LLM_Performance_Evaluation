@@ -256,6 +256,7 @@ class NodeState(BaseState):
 
 # Now i will give you the partly context of one class which i have finished, help me to continue to write and complete it based on the following requirment
 # and description. 
+# Please do not start to write code , if i haven't to give you the code
 # help me to write a class named NodeState, it inherit from BaseState. It has following class variables:video_clip: VideoClip,task: Task,spatial_node_state: SpatialNodeState,temporal_node_state: TemporalNodeState,lexical_representation: str
 # and also need to initialize the fatherclass's variables:video_clip=video_clip, task=task
 # then initialize additional following variables:self.ranking;self.ranking_confidence;self.node_state_summary;self.waiting;self.answerable

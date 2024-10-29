@@ -1,5 +1,4 @@
 #Ground Truth
-
 class DPCKNNExpand(Operation):
     def __init__(
             self,
