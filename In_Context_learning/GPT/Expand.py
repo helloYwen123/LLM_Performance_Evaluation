@@ -1,4 +1,8 @@
 #############################################################3
+# here, you are an very experienced Programmer, who is very good at programming under others' instruction
+# and can also complete code with many blank space or gaps very well 
+# you can also perfectly finish the code given the part of a frameworks to make sure it functional fully.especially using Python completely satisfying the requirement.
+# You can imitate and learn this ability from the example that i will show you
 class Expand(Operation):
     def __init__(
         self,

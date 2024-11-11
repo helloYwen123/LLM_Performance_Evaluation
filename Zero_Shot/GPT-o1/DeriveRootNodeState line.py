@@ -159,10 +159,6 @@ class DeriveRootNodeState(Operation):
         num_words = max(num_words_mul_ten, min_num_words_summary)
         return num_words
 
-
-
-
-
 # QUESTIONS ：
 
 # here, you are an very experienced Programmer, who is very good at programming under others' instruction and can also complete code with many blank space or gaps very well you can also perfectly finish the code given the part of a frameworks to make sure it functional fully.especially using Python completely satisfying the requirement.Next please you complete the code, including classes and functions for my algorithm framework under my instruction and decription
@@ -190,7 +186,7 @@ class DeriveRootNodeState(Operation):
 # normalization_video_length: int = 180
 #  this class has also two Function members: _execute and get_num_words_for_summary；
 # _execute has given inputs :(graph: Optional[Graph], api: Optional[API], target=Optional[Node]) return nothing
-# first, i take root node from graph and set it to root_node, compute the len of current video clip
+# first, it take root node from graph and set it to root_node, compute the len of current video clip
 # video clip is also from this form 'root_node.state.video_clip'
 # node this variable has multi-sublevel, using '.' to call ,the form is like root_node.state.spatial_node_state.action_captions 
 # if self.derive_action_aption is true , it will use api's function to get action captions from clips 
@@ -212,13 +208,6 @@ class DeriveRootNodeState(Operation):
 # otherwise it will normalize normalize the number of words,and calculate the number of words for the summary (proportionate to the video length in seconds)
 # and it makes sure the num of words is multiple of 10 and no less than min_num_words_summary 
 #
-#
-#
-#
-#
-#
-
-######################################################################################################################
 ######################################################################################################################
 ######################################################################################################################
 import logging
@@ -571,8 +560,6 @@ class DeriveRootNodeState(Operation):
             num_words = max(num_words, min_num_words_summary)
         return num_words
 #############################################################################################################################
-
-
 # Now i will give you the one class which i have finished and but with many blank spaces and gaps 
 # that I hope you can help me fill in and complete it in order to make it fuctional and run smoothly.
 # continue to write and complete it based on the following requirment and description. 
@@ -769,3 +756,5 @@ class DeriveRootNodeState(Operation):
         # Ensure the number of words is not less than the minimum required
         num_words = max(num_words_mul_ten, min_num_words_summary)
         return num_words
+
+
