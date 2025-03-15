@@ -1,18 +1,22 @@
 import sys
 import os
 
+import time
+import torch
+from transformers import pipeline
 
-def get_project_root() -> str:
-    current_dir = os.path.dirname(os.path.abspath(__file__))
-    while current_dir != '/':
-        if os.path.exists(os.path.join(current_dir, 'Tool_Thinker')):
-            return os.path.join(current_dir, 'Tool_Thinker')
-        current_dir = os.path.dirname(current_dir)
-    raise Exception("Could not find project root")
+from PIL import Image, ImageOps
 
-root_dir = get_project_root()
-print(os.path.join(root_dir,'tools'))
-# add the tools directory to the sys.path
-sys.path.insert(0, os.path.join(root_dir, "tools"))
+current_dir = os.path.dirname(os.path.abspath(__file__))
+root_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(current_dir)))))
+sys.path.insert(0, root_dir)
+print(root_dir)
+from tools.object_detector.tool import Object_Detector_Tool 
 
-import object_detector as object_detector
+tool = Object_Detector_Tool()
+metadata = tool.get_metadata()
+#print(metadata)
+
+# relative_image_path = "examples/baseball.png"
+# data_dir = os.path.join(root_dir,'tools','object_detector')
+

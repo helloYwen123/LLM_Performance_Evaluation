@@ -1,6 +1,6 @@
 # octotools/tools/base.py
 
-from octotools.engine.openai import ChatOpenAI
+# from octotools.engine.openai import ChatOpenAI
 
 class BaseTool:
     """
